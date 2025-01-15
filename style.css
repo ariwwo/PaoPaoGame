@@ -1,0 +1,124 @@
+body {
+    background: linear-gradient(#bbe4ee, #1a295a);
+    height: 100vh;
+}
+
+#GameBoard {
+    display: inline-grid;
+    justify-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(6, 100px);
+    gap: 50px;
+    background-color: rgb(110, 147, 172);
+    position: absolute;
+    left: 510px;
+    top: 220px;
+    box-shadow: 0 10px 100px rgb(255, 255, 255);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
+    border-radius: 15px;
+}
+
+.cell {
+    background-color: azure;
+    cursor:pointer;
+    border-radius: 5px;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    align-content: center;
+    font-size: 18px;
+}
+
+.cell:hover {
+    background-color:rgb(252, 255, 153);
+    transition: 500ms;
+    transform: scale(1.2);
+}
+
+.cell:active {
+    background-color:rgb(241, 244, 247);
+    transition: 500ms;
+    transform: scale(1.4);
+}
+
+.cellHide {
+    color: transparent;
+    user-select: none;
+}
+
+.cellShown {
+    color:black;
+    user-select: auto;
+}
+
+button {
+    background-color:rgb(241, 247, 169);
+    border-radius: 25% 10%;
+    border-width: 0.7em;
+    border-style: double;
+    position: absolute;
+    left:520px;
+    top:150px;
+    width: 120px;
+    height: 50px;
+    color: rgb(24, 45, 114);
+    font-size: 15px;
+}
+
+button:hover {
+    transform: scale(0.9);
+}
+button:active {
+    transform: scale(0.8);
+}
+
+p {
+    position: absolute;
+    left: 750px;
+    font-size: 50px;
+    top: 30px;
+}
+
+#timer {
+    position: absolute;
+    top: 150px;
+    left: 310px;
+    font-size: 80px;
+    color: rgb(254, 255, 167)
+}
+
+#points {
+    position: absolute;
+    top: 250px;
+    left: 310px;
+    font-size: 80px;
+    color: #ffffff;
+}
+
+.p1 {
+    position: absolute;
+    top: 110px;
+    left:100px;
+}
+
+.p2 {
+    position: absolute;
+    top: 210px;
+    left:100px;
+}
+
+.img1 {
+    position: absolute;
+    right: 300px;
+    top: 510px;
+}
+
+.img2 {
+    position: absolute;
+    right: 500px;
+    top: 80px;
+}
+
